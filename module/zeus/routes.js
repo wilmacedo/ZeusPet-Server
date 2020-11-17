@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 const { 
-    all, 
+    all,
     findById,
-    save, 
+    save,
     remove
 } = require('./controller');
 
