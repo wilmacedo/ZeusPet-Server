@@ -13,15 +13,11 @@ const zeusSchema = mongoose.Schema({
         type: Date,
         require: true
     }
-}, {
-    timestamps: true,
-    toJSON: { virtuals: true },
-    toObject: { virtuals: true}
-});
+}, {});
 
-zeusSchema.index({ 
-    title: 1, 
-    value: 1, 
+zeusSchema.index({
+    title: 1,
+    value: 1,
     date: 1
 });
 
