@@ -1,26 +1,42 @@
 const mongoose = require('mongoose');
 
 const zeusSchema = mongoose.Schema({
-    title: {
+  username: {
+    type: String,
+    require: true,
+  },
+  password: {
+    type: String,
+    require: true
+  },
+  pets: {
+    name: {
+      type: String,
+      require: true
+    },
+    items: {
+      title: {
         type: String,
         require: true
-    },
-    value: {
+      },
+      value: {
         type: Number,
         require: true
-    },
-    date: {
+      },
+      date: {
         type: Date,
         require: true
+      }
     }
+  }
 }, {
-    timestamps: true
+  timestamps: true
 });
 
 zeusSchema.index({
-    title: 1,
-    value: 1,
-    date: 1
+  username: 1,
+  password: 1,
+  pets: 1
 });
 
 module.exports = mongoose.model('zeus', zeusSchema);
