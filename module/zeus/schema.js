@@ -13,7 +13,9 @@ const zeusSchema = mongoose.Schema({
         type: Date,
         require: true
     }
-}, {});
+}, {
+    timestamps: true
+});
 
 zeusSchema.index({
     title: 1,
