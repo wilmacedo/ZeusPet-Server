@@ -33,10 +33,10 @@ const zeusSchema = mongoose.Schema({
   timestamps: true
 });
 
-zeusSchema.index({
-  username: 1,
-  password: 1,
-  pets: 1
-});
+// zeusSchema.index({
+//   username: 1,
+//   password: 1,
+//   pets: 1
+// });
 
 module.exports = mongoose.model('zeus', zeusSchema);
