@@ -3,14 +3,14 @@ const mongoose = require('mongoose');
 const zeusSchema = mongoose.Schema({
   username: String,
   password: String,
-  pets: {
+  pets: [{
     name: String,
     items: [{
       title: String,
       value: Number,
       date: Date
     }]
-  }
+  }]
 }, {
   timestamps: true
 });
