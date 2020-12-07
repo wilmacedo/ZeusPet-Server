@@ -7,7 +7,9 @@ Plataforma para facilitar a organização dos gastos e cuidados com seu pet. Reu
 Desafio proposto por BlueLab para ser utilizado como treinamento de diversas ferramentas e tecnologias do mercado atual, visando aprimorar os conhecimentos nas áreas desenvolvidas.
 
 ## Ideias
-- [X] Função de último item
+- [X] Deletar item específico
+- [X] Múltiplos pets
+- [X] Schema para login
 
 ## Tecnologias Utilizadas
 
