@@ -13,18 +13,6 @@ const findById = async (request, response) => {
   }
 }
 
-const findLastItem = async (_, response) => {
-  const lastItem = await zeusSchema.find().sort({
-    createdAt: -1
-  }).limit(1);
-
-  if (!lastItem) {
-    return response.status(404).send('Item not found.');
-  } else {
-    return response.json(lastItem);
-  }
-}
-
 const removeItem = async (request, response) => {
   const {
     id,
@@ -96,6 +84,5 @@ module.exports = {
   findById,
   save,
   remove,
-  removeItem,
-  findLastItem
+  removeItem
 }
